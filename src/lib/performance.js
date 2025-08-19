@@ -5,8 +5,8 @@
 
 // Core Web Vitals monitoring
 export const monitorCoreWebVitals = () => {
-  if ('web-vital' in window) {
-    import('web-vital').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
+  if ('web-vitals' in window) {
+    import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
       getCLS(console.log);
       getFID(console.log);
       getFCP(console.log);
